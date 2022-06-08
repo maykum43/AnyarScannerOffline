@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anyarscaner" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/new_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/new_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnyarScaner"
+        android:usesCleartextTraffic="true">
+<!--        android:usesCleartextTraffic="true"-->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation= "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity" />
+<!--        <activity android:name=".activity.LoginActivity"/>-->
+        <activity android:name=".activity.MasukActivity"/>
+        <activity android:name=".activity.ScannerActivity" />
+        <activity android:name=".activity.CreateHisActivity" />
+        <activity android:name=".activity.RiwayatActivity" />
+        <activity android:name=".activity.ScanBarcodeActivity" />
+        <activity android:name=".activity.EditProfilActivity" />
+        <activity android:name=".activity.BantuanActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.NewEditProfilActivity" />
+        <activity android:name=".activity.PoinMallActivity" />
+        <activity android:name=".activity.DetailHadiahActivity" />
+<!--        <activity android:name=".activity.RiwayatRedeem" />-->
+        <activity android:name=".activity.RiwayatRedeemActivity" />
+        <activity android:name=".activity.ContentActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SupportActivity" />
+        <activity android:name=".activity.DetailItemReedemActivity" />
+    </application>
+
+
+</manifest>
